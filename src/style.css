@@ -4,6 +4,7 @@
   margin: 20px auto;
   border-radius: 20px;
   max-width: 600px;
+  font-family: cursive;
 }
 
 .search {
@@ -70,4 +71,5 @@ h1 {
 .Open-source-code-link {
   font-size: smaller;
   text-align: center;
+  font-family: cursive;
 }
