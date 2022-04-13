@@ -1,8 +1,8 @@
 .app {
-  border: solid;
+  border: 1px solid #e0ebeb;
   padding: 15px;
   margin: 20px auto;
-  border-radius: 20px;
+  border-radius: 15px;
   max-width: 600px;
   font-family: "Lato", sans-serif;
 }
@@ -11,17 +11,27 @@
   padding-top: 20px;
 }
 h1 {
+  color: #a7bcb9;
   font-size: 55px;
   padding: 10px 0;
-  font-weight: bold;
+  font-weight: 100;
+  line-height: 30px;
 }
 
 .day_time_weather_description {
-  font-size: 10px;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
   color: #707eae;
   list-style-type: none; /* Remove bullets */
-  padding: 20px 0;
+  margin: 0;
+  padding: 0;
   text-align: left;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 .imoji_temp {
