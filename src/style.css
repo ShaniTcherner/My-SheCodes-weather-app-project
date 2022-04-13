@@ -1,5 +1,5 @@
 .app {
-  border: 1px solid #e0ebeb;
+  border: 3px solid #e0ebeb;
   padding: 15px;
   margin: 20px auto;
   border-radius: 15px;
@@ -35,12 +35,12 @@ ul {
 }
 
 .imoji_temp {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   font-weight: bolder;
-  border: solid;
+  border: 3px solid #e0ebeb;
   border-radius: 40px;
-  padding: 10px;
+  padding: 3px;
 }
 
 .precipitation_humidity_wind {
