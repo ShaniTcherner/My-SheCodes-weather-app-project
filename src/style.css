@@ -39,7 +39,7 @@ ul {
   text-align: center;
   font-weight: bolder;
   border: 3px solid #e0ebeb;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 3px;
 }
 
@@ -55,6 +55,7 @@ ul {
 
 .date {
   font-size: 20px;
+  color: #9ba6a5;
   padding: 10px 0;
   font-weight: bold;
   text-align: left;
