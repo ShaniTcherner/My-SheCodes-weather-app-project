@@ -11,7 +11,7 @@
   padding-top: 20px;
 }
 h1 {
-  color: #a7bcb9;
+  color: #757a79;
   font-size: 55px;
   padding: 10px 0;
   font-weight: 100;
@@ -22,10 +22,10 @@ h1 {
   font-size: 16px;
   font-weight: 100;
   line-height: 20px;
-  color: #707eae;
+  color: #9ba6a5;
   list-style-type: none; /* Remove bullets */
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   text-align: left;
 }
 
@@ -44,8 +44,11 @@ ul {
 }
 
 .precipitation_humidity_wind {
-  font-size: 10px;
-  color: #707eae;
+  font-size: 16px;
+  font-weight: 100;
+  line-height: 20px;
+  color: #9ba6a5;
+  margin: 0;
   padding: 10px 0;
   text-align: left;
 }
