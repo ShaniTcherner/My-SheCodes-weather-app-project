@@ -13,7 +13,7 @@
 }
 h1 {
   color: #757a79;
-  font-size: 55px;
+  font-size: 45px;
   padding: 10px 0;
   font-weight: 100;
   line-height: 30px;
@@ -36,9 +36,8 @@ ul {
 }
 
 .emoji_temp {
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
-  font-weight: bolder;
   border: 3px solid #e0ebeb;
   border-radius: 20px;
   padding: 3px;
@@ -62,9 +61,10 @@ ul {
   text-align: left;
 }
 
-.current_temp {
-  font-size: 20px;
-  padding: 10px 0;
+.current_temperature {
+  font-size: 24px;
+  color: #9ba6a5;
+  padding: 0 16px;
   font-weight: bold;
   text-align: right;
 }
