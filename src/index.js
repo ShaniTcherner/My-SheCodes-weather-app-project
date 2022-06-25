@@ -1,5 +1,6 @@
 //Display the current date and time
 
+/*
 let now = new Date();
 
 let updatedDate = document.querySelector("p.date");
@@ -51,10 +52,16 @@ updatedDate.innerHTML = `${currentDate}`;
 updatedDay.innerHTML = `${day}`;
 updatedHour.innerHTML = `${currentHour}`;
 
+*/
+
 //Add a search engine, when searching for a city , display the city name on the page after the user submits the form.
 //And display the name of the city on the result page and the current temperature of the city
 
 // Displaying the updated data
+function formatDate(timestamp) {
+  //calculate the date
+  return "Friday";
+}
 
 function displayWeather(response) {
   document.querySelector("h1").innerHTML = response.data.name;
@@ -67,6 +74,9 @@ function displayWeather(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
+  document.querySelector("#current-day").innerHTML = formatDate(
+    response.data.dt * 1000
+  );
 }
 
 //Searching for specific city and collecting the relevant data from the API then using the displayWeather function
