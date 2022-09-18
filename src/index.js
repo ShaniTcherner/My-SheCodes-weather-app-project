@@ -57,10 +57,10 @@ updatedHour.innerHTML = `${currentHour}`;
 //Add a search engine, when searching for a city , display the city name on the page after the user submits the form.
 //And display the name of the city on the result page and the current temperature of the city
 
-// Displaying the updated data
+// Displaying the updated date data
 function formatDate(timestamp) {
   //calculate the date
-  return "Friday";
+  return "Friday 05:00";
 }
 
 function displayWeather(response) {
@@ -74,7 +74,7 @@ function displayWeather(response) {
   );
   document.querySelector("#weather-description").innerHTML =
     response.data.weather[0].main;
-  document.querySelector("#current-day").innerHTML = formatDate(
+  document.querySelector("#day-and-hour").innerHTML = formatDate(
     response.data.dt * 1000
   );
 }
