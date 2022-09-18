@@ -60,7 +60,13 @@ updatedHour.innerHTML = `${currentHour}`;
 // Displaying the updated date data
 function formatDate(timestamp) {
   //calculate the date
-  return "Friday 05:00";
+  let dayAndHour = new Date(timestamp);
+
+  let hours = dayAndHour.getHours();
+  let minutes = dayAndHour.getMinutes();
+  let day = dayAndHour.getDay();
+
+  return `${day} ${hours}:${minutes}`;
 }
 
 function displayWeather(response) {
