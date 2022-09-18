@@ -63,7 +63,13 @@ function formatDate(timestamp) {
   let dayAndHour = new Date(timestamp);
 
   let hours = dayAndHour.getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
   let minutes = dayAndHour.getMinutes();
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
   let days = [
     "Sunday",
     "Monday",
