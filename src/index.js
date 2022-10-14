@@ -142,3 +142,7 @@ searchCity("Tel aviv");
 
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
+
+//Display correct weater icon
+let iconElement = document.querySelector("#icon");
+iconElement.setAttribute("src",`http://openweathermap.org/img/wn/10d@2x.png`) ;
