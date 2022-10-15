@@ -145,4 +145,4 @@ currentLocationButton.addEventListener("click", getCurrentLocation);
 
 //Display correct weater icon
 let iconElement = document.querySelector("#icon");
-iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`) ;
