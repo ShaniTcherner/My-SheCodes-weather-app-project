@@ -98,6 +98,10 @@ function displayWeather(response) {
   document.querySelector("#day-and-hour").innerHTML = formatDate(
     response.data.dt * 1000
   );
+  //Display matching icon
+  let iconElement = document.querySelector("#icon");
+iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`) ;
+iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 //Searching for specific city and collecting the relevant data from the API then using the displayWeather function
@@ -143,7 +147,3 @@ searchCity("Tel aviv");
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-//Display correct weater icon
-let iconElement = document.querySelector("#icon");
-iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`) ;
-iconElement.setAttribute("alt", response.data.weather[0].description);
