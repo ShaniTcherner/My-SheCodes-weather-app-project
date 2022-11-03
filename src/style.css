@@ -55,13 +55,6 @@ ul {
   text-align: left;
 }
 
-.date {
-  font-size: 20px;
-  color: #9ba6a5;
-  padding: 10px 0;
-  font-weight: bold;
-  text-align: left;
-}
 
 .current_temperature {
   font-size: 24px;
