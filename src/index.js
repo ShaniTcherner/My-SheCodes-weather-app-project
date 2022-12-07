@@ -135,9 +135,17 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function displayFahrenheitTemp(event){
+  event.preventDefault();
+  alert("button cliked");
+}
+
 //Click event for the form- in order to take the input (city)
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", inputSubmit);
+
+let fahrenheitbutton = Document.querySelector("#fahrenheit");
+fahrenheitbutton.addEventListener("click",displayFahrenheitTemp);
 
 //Default city (using the searchCity function)
 searchCity("Tel aviv");
@@ -147,10 +155,3 @@ searchCity("Tel aviv");
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
-function displayFahrenheitTemp(event){
-  event.preventDefault();
-  alert("button cliked");
-}
-
-let fahrenheitbutton = Document.querySelector("#fahrenheit");
-fahrenheitbutton.addEventListener("click",displayFahrenheitTemp);
