@@ -147,3 +147,10 @@ searchCity("Tel aviv");
 let currentLocationButton = document.querySelector("#current-location");
 currentLocationButton.addEventListener("click", getCurrentLocation);
 
+function displayFahrenheitTemp(event){
+  event.preventDefault();
+  alert("button cliked");
+}
+
+let fahrenheitbutton = Document.querySelector("#fahrenheit");
+fahrenheitbutton.addEventListener("click",displayFahrenheitTemp);
