@@ -144,14 +144,16 @@ function displayFahrenheitTemp(event){
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", inputSubmit);
 
+//Display the city and current temperature by using the current Location button
+
+let currentLocationButton = document.querySelector("#current-location");
+currentLocationButton.addEventListener("click", getCurrentLocation);
+
 let fahrenheitbutton = Document.querySelector("#fahrenheit");
 fahrenheitbutton.addEventListener("click",displayFahrenheitTemp);
 
 //Default city (using the searchCity function)
 searchCity("Tel aviv");
 
-//Display the city and current temperature by using the current Location button
 
-let currentLocationButton = document.querySelector("#current-location");
-currentLocationButton.addEventListener("click", getCurrentLocation);
 
